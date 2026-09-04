@@ -1,0 +1,39 @@
+{
+  "name": "genpark-codebase-invariant-assertion-sentinel-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Codebase architectural invariant assertion sentinel preventing multi-step AI agents from violating hard system constraints.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "coding-agent",
+  "tags": [
+    "codex-astra",
+    "codebase-invariants",
+    "architectural-rules",
+    "lint-guard",
+    "ai-safety"
+  ],
+  "inputs": {
+    "patch_diff": {
+      "type": "string"
+    },
+    "protected_invariants": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "sentinel_id": {
+      "type": "string"
+    },
+    "all_invariants_preserved": {
+      "type": "boolean"
+    },
+    "governance_verdict": {
+      "type": "string"
+    },
+    "sentinel_audit_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
